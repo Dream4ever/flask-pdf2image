@@ -1,28 +1,19 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fflask3&demo-title=Flask%203%20%2B%20Vercel&demo-description=Use%20Flask%203%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fflask3-python-template.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994156/random/flask.png)
+# Flask & pdf2image in Docker
 
-# Flask + Vercel
+This repo provides you with a dockerized pdf2image envrionment supported by Flask.
 
-This example shows how to use Flask 3 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
+## Directly run Python script
 
-## Demo
+Just run `python app.py` in terminal, and this application will be available at `http://127.0.0.1:5000/pdf2img`.
 
-https://flask-python-template.vercel.app/
+## Run in Docker
 
-## How it Works
+Cd to this folder and run `docker compose up` in terminal, then visit `http://127.0.0.1:5000/pdf2img`.
 
-This example uses the Web Server Gateway Interface (WSGI) with Flask to enable handling requests on Vercel with Serverless Functions.
+## Usage
 
-## Running Locally
+Click input button to upload one or more PDF files, and wait to save converted JPG files zipped in file `images.zip`, JPG files belonging to each PDF file is in seperate folder named from PDF.
 
-```bash
-npm i -g vercel
-vercel dev
-```
+## Contribution
 
-Your Flask application is now available at `http://localhost:3000`.
-
-## One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fflask3&demo-title=Flask%203%20%2B%20Vercel&demo-description=Use%20Flask%203%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fflask3-python-template.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994156/random/flask.png)
+Feel free to commit issue and PR :)
