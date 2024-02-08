@@ -1,0 +1,12 @@
+version: "3"
+services:
+  web:
+    container_name: pdf2img
+    build: .
+    volumes:
+      # converted images is saved in output folder
+      # will be cleared on next convert
+      - ./output:/output
+      - ./app.py:/app.py
+    ports:
+      - "5000:5000"
