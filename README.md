@@ -1,4 +1,4 @@
-# Flask & pdf2image in Docker
+# pdf2image behind Flask in Docker
 
 This repo provides you with a dockerized pdf2image envrionment supported by Flask.
 
